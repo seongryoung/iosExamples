@@ -14,14 +14,7 @@ class CllocationViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        let locationManager:CLLocationManager
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-//        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestAlwaysAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
+        
     
         
 //        let cllocationStatus = CLLocationManager.authorizationStatus()
@@ -41,6 +34,20 @@ class CllocationViewController: UIViewController, CLLocationManagerDelegate {
 //
 //        }
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // Do any additional setup after loading the view.
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let locationManager:CLLocationManager = appDelegate.locationManager
+        //locationManager 변수를 다시 초기화 하면 app delegate 가 아니라 arc 한테 회수 당함.
+//        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
