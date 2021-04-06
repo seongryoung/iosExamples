@@ -18,6 +18,9 @@
 		1637EBAC25B00B5A001544F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1637EBAA25B00B5A001544F9 /* LaunchScreen.storyboard */; };
 		16649D2225DA32F800929890 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16649D2025DA32F800929890 /* ScrollViewController.swift */; };
 		16649D2325DA32F800929890 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16649D2125DA32F800929890 /* ScrollViewController.xib */; };
+		16682288261BEA33000B70E9 /* CllocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16682286261BEA33000B70E9 /* CllocationViewController.swift */; };
+		16682289261BEA33000B70E9 /* CllocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16682287261BEA33000B70E9 /* CllocationViewController.xib */; };
+		1668228C261BF289000B70E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1668228B261BF289000B70E9 /* CoreLocation.framework */; };
 		169D227B25FEE20D00367F3C /* LikeStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D227925FEE20D00367F3C /* LikeStackViewController.swift */; };
 		169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169D227A25FEE20D00367F3C /* LikeStackViewController.xib */; };
 		16D39CAE25B5635100D8C6F0 /* TitleWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */; };
@@ -37,6 +40,9 @@
 		1637EBAD25B00B5A001544F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16649D2025DA32F800929890 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		16649D2125DA32F800929890 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		16682286261BEA33000B70E9 /* CllocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CllocationViewController.swift; sourceTree = "<group>"; };
+		16682287261BEA33000B70E9 /* CllocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CllocationViewController.xib; sourceTree = "<group>"; };
+		1668228B261BF289000B70E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		169D227925FEE20D00367F3C /* LikeStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeStackViewController.swift; sourceTree = "<group>"; };
 		169D227A25FEE20D00367F3C /* LikeStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeStackViewController.xib; sourceTree = "<group>"; };
 		16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithImageCell.swift; sourceTree = "<group>"; };
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1668228C261BF289000B70E9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,7 @@
 		16080BC425B9419100326818 /* subject */ = {
 			isa = PBXGroup;
 			children = (
+				16682285261BE9FD000B70E9 /* clLocation */,
 				169D227825FEE19500367F3C /* insteadStack */,
 				16649D1F25DA32CD00929890 /* scrollView */,
 				1632870325D0D93800E3AC70 /* stackView */,
@@ -105,6 +113,7 @@
 			children = (
 				1637EB9E25B00B57001544F9 /* Reperence */,
 				1637EB9D25B00B57001544F9 /* Products */,
+				1668228A261BF289000B70E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +153,23 @@
 				16649D2125DA32F800929890 /* ScrollViewController.xib */,
 			);
 			path = scrollView;
+			sourceTree = "<group>";
+		};
+		16682285261BE9FD000B70E9 /* clLocation */ = {
+			isa = PBXGroup;
+			children = (
+				16682286261BEA33000B70E9 /* CllocationViewController.swift */,
+				16682287261BEA33000B70E9 /* CllocationViewController.xib */,
+			);
+			path = clLocation;
+			sourceTree = "<group>";
+		};
+		1668228A261BF289000B70E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1668228B261BF289000B70E9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		169D227825FEE19500367F3C /* insteadStack */ = {
@@ -217,6 +243,7 @@
 				1637EBAC25B00B5A001544F9 /* LaunchScreen.storyboard in Resources */,
 				16080BC925B941E600326818 /* RedViewController.xib in Resources */,
 				1637EBA925B00B5A001544F9 /* Assets.xcassets in Resources */,
+				16682289261BEA33000B70E9 /* CllocationViewController.xib in Resources */,
 				169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */,
 				1637EBA725B00B57001544F9 /* Main.storyboard in Resources */,
 				16649D2325DA32F800929890 /* ScrollViewController.xib in Resources */,
@@ -230,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16682288261BEA33000B70E9 /* CllocationViewController.swift in Sources */,
 				169D227B25FEE20D00367F3C /* LikeStackViewController.swift in Sources */,
 				1637EBA425B00B57001544F9 /* ViewController.swift in Sources */,
 				16649D2225DA32F800929890 /* ScrollViewController.swift in Sources */,
