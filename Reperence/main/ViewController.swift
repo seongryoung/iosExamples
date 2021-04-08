@@ -19,7 +19,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
     }
     
-    let menuController = [String(describing: RedViewController.self), String(describing: StackViewController.self), String(describing: ScrollViewController.self), String(describing: LikeStackViewController.self), String(describing: CllocationViewController.self)]
+    let menuController = [String(describing: RedViewController.self),
+                          String(describing: StackViewController.self),
+                          String(describing: ScrollViewController.self),
+                          String(describing: LikeStackViewController.self),
+                          String(describing: CllocationViewController.self),
+                          String(describing: UserNotificationViewController.self)
+    ]
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,6 +59,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.navigationController?.pushViewController(LikeStackViewController(), animated: true)
         case 4:
             self.navigationController?.pushViewController(CllocationViewController(), animated: true)
+        case 5:
+            self.navigationController?.pushViewController(UserNotificationViewController(), animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)

@@ -23,6 +23,8 @@
 		1668228C261BF289000B70E9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1668228B261BF289000B70E9 /* CoreLocation.framework */; };
 		169D227B25FEE20D00367F3C /* LikeStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D227925FEE20D00367F3C /* LikeStackViewController.swift */; };
 		169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169D227A25FEE20D00367F3C /* LikeStackViewController.xib */; };
+		16A56DE6261EC65C001CCBC2 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A56DE4261EC65C001CCBC2 /* UserNotificationViewController.swift */; };
+		16A56DE7261EC65C001CCBC2 /* UserNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A56DE5261EC65C001CCBC2 /* UserNotificationViewController.xib */; };
 		16D39CAE25B5635100D8C6F0 /* TitleWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		1668228B261BF289000B70E9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		169D227925FEE20D00367F3C /* LikeStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeStackViewController.swift; sourceTree = "<group>"; };
 		169D227A25FEE20D00367F3C /* LikeStackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeStackViewController.xib; sourceTree = "<group>"; };
+		16A56DE4261EC65C001CCBC2 /* UserNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationViewController.swift; sourceTree = "<group>"; };
+		16A56DE5261EC65C001CCBC2 /* UserNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserNotificationViewController.xib; sourceTree = "<group>"; };
 		16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 		16080BC425B9419100326818 /* subject */ = {
 			isa = PBXGroup;
 			children = (
+				16A56DE3261EC638001CCBC2 /* UserNotification */,
 				16682285261BE9FD000B70E9 /* clLocation */,
 				169D227825FEE19500367F3C /* insteadStack */,
 				16649D1F25DA32CD00929890 /* scrollView */,
@@ -181,6 +186,15 @@
 			path = insteadStack;
 			sourceTree = "<group>";
 		};
+		16A56DE3261EC638001CCBC2 /* UserNotification */ = {
+			isa = PBXGroup;
+			children = (
+				16A56DE4261EC65C001CCBC2 /* UserNotificationViewController.swift */,
+				16A56DE5261EC65C001CCBC2 /* UserNotificationViewController.xib */,
+			);
+			path = UserNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1632870725D0D95600E3AC70 /* StackViewController.xib in Resources */,
+				16A56DE7261EC65C001CCBC2 /* UserNotificationViewController.xib in Resources */,
 				1637EBAC25B00B5A001544F9 /* LaunchScreen.storyboard in Resources */,
 				16080BC925B941E600326818 /* RedViewController.xib in Resources */,
 				1637EBA925B00B5A001544F9 /* Assets.xcassets in Resources */,
@@ -264,6 +279,7 @@
 				1637EBA025B00B57001544F9 /* AppDelegate.swift in Sources */,
 				1632870625D0D95600E3AC70 /* StackViewController.swift in Sources */,
 				16080BC825B941E600326818 /* RedViewController.swift in Sources */,
+				16A56DE6261EC65C001CCBC2 /* UserNotificationViewController.swift in Sources */,
 				16D39CAE25B5635100D8C6F0 /* TitleWithImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
