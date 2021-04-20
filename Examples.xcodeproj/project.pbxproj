@@ -138,17 +138,9 @@
 				16080BC125B9415700326818 /* main */,
 				1637EBA825B00B5A001544F9 /* Assets.xcassets */,
 				1637EBAA25B00B5A001544F9 /* LaunchScreen.storyboard */,
-				1637EBB325B00BE8001544F9 /* tmp */,
 				1637EBAD25B00B5A001544F9 /* Info.plist */,
 			);
 			path = Reperence;
-			sourceTree = "<group>";
-		};
-		1637EBB325B00BE8001544F9 /* tmp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tmp;
 			sourceTree = "<group>";
 		};
 		16649D1F25DA32CD00929890 /* scrollView */ = {
@@ -425,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTA399SVLC;
 				INFOPLIST_FILE = Reperence/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MTA399SVLC;
 				INFOPLIST_FILE = Reperence/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
