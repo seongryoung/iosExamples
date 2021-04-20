@@ -24,7 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                           String(describing: ScrollViewController.self),
                           String(describing: LikeStackViewController.self),
                           String(describing: CllocationViewController.self),
-                          String(describing: UserNotificationViewController.self)
+                          String(describing: UserNotificationViewController.self),
+                          String(describing: LottieTestViewController.self)
     ]
     
     
@@ -61,6 +62,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.navigationController?.pushViewController(CllocationViewController(), animated: true)
         case 5:
             self.navigationController?.pushViewController(UserNotificationViewController(), animated: true)
+        case 6:
+            self.navigationController?.pushViewController(LottieTestViewController(), animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)
