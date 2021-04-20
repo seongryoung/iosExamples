@@ -21,7 +21,9 @@ class LottieTestViewController: UIViewController {
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         
+
         //메인 수정
+        //a 를 수정해봄
         animationView.play { isComplete in
             print("animation Complete", isComplete)
         }
