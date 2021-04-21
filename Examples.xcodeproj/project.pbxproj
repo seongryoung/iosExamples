@@ -29,6 +29,10 @@
 		649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */; };
 		649BAC8D262F3A53009C7428 /* LottieTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */; };
 		649BAC94262F3B49009C7428 /* goTrashCan.json in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC91262F3B49009C7428 /* goTrashCan.json */; };
+		64BD1095262FCEC90013DA84 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD1093262FCEC90013DA84 /* TableViewController.swift */; };
+		64BD1096262FCEC90013DA84 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64BD1094262FCEC90013DA84 /* TableViewController.xib */; };
+		64D0CC67262FD8E100F8B995 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */; };
+		64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */; };
 		F97BC3C314AB30BF85B852F1 /* Pods_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,10 @@
 		649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTestViewController.swift; sourceTree = "<group>"; };
 		649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTestViewController.xib; sourceTree = "<group>"; };
 		649BAC91262F3B49009C7428 /* goTrashCan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goTrashCan.json; sourceTree = "<group>"; };
+		64BD1093262FCEC90013DA84 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		64BD1094262FCEC90013DA84 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +104,7 @@
 		16080BC425B9419100326818 /* subject */ = {
 			isa = PBXGroup;
 			children = (
+				64BD1092262FCEA10013DA84 /* tableView */,
 				649BAC89262F3A1A009C7428 /* lottie */,
 				16A56DE3261EC638001CCBC2 /* UserNotification */,
 				16682285261BE9FD000B70E9 /* clLocation */,
@@ -227,6 +236,25 @@
 			path = lottie;
 			sourceTree = "<group>";
 		};
+		64BD1092262FCEA10013DA84 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				64BD1099262FD1E30013DA84 /* cell */,
+				64BD1093262FCEC90013DA84 /* TableViewController.swift */,
+				64BD1094262FCEC90013DA84 /* TableViewController.xib */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		64BD1099262FD1E30013DA84 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */,
+				64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		E5BB3E4309F7A4EC99C127AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,11 +327,13 @@
 				1632870725D0D95600E3AC70 /* StackViewController.xib in Resources */,
 				16A56DE7261EC65C001CCBC2 /* UserNotificationViewController.xib in Resources */,
 				1637EBAC25B00B5A001544F9 /* LaunchScreen.storyboard in Resources */,
+				64BD1096262FCEC90013DA84 /* TableViewController.xib in Resources */,
 				649BAC8D262F3A53009C7428 /* LottieTestViewController.xib in Resources */,
 				649BAC94262F3B49009C7428 /* goTrashCan.json in Resources */,
 				16080BC925B941E600326818 /* RedViewController.xib in Resources */,
 				1637EBA925B00B5A001544F9 /* Assets.xcassets in Resources */,
 				16682289261BEA33000B70E9 /* CllocationViewController.xib in Resources */,
+				64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */,
 				169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */,
 				1637EBA725B00B57001544F9 /* Main.storyboard in Resources */,
 				16649D2325DA32F800929890 /* ScrollViewController.xib in Resources */,
@@ -363,8 +393,10 @@
 				169D227B25FEE20D00367F3C /* LikeStackViewController.swift in Sources */,
 				1637EBA425B00B57001544F9 /* ViewController.swift in Sources */,
 				16649D2225DA32F800929890 /* ScrollViewController.swift in Sources */,
+				64D0CC67262FD8E100F8B995 /* TitleTableViewCell.swift in Sources */,
 				1637EBA025B00B57001544F9 /* AppDelegate.swift in Sources */,
 				1632870625D0D95600E3AC70 /* StackViewController.swift in Sources */,
+				64BD1095262FCEC90013DA84 /* TableViewController.swift in Sources */,
 				16080BC825B941E600326818 /* RedViewController.swift in Sources */,
 				649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */,
 				16A56DE6261EC65C001CCBC2 /* UserNotificationViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
 
     @IBOutlet weak var menuTableView: UITableView!
     
@@ -25,10 +25,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                           String(describing: LikeStackViewController.self),
                           String(describing: CllocationViewController.self),
                           String(describing: UserNotificationViewController.self),
-                          String(describing: LottieTestViewController.self)
+                          String(describing: LottieTestViewController.self),
+                          String(describing: TableViewController.self)
     ]
     
     
+    
+    
+
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let titleWithImageCell = tableView.dequeueReusableCell(withIdentifier: "titleWithImageCell", for: indexPath) as! TitleWithImageCell
@@ -64,6 +71,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.navigationController?.pushViewController(UserNotificationViewController(), animated: true)
         case 6:
             self.navigationController?.pushViewController(LottieTestViewController(), animated: true)
+        case 7:
+            self.navigationController?.pushViewController(TableViewController(), animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)
@@ -71,7 +80,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
 
     }
-    
-
 }
 
