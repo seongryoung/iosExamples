@@ -26,7 +26,8 @@ class ViewController: UIViewController {
                           String(describing: CllocationViewController.self),
                           String(describing: UserNotificationViewController.self),
                           String(describing: LottieTestViewController.self),
-                          String(describing: TableViewController.self)
+                          String(describing: TableViewController.self),
+                          String(describing: UiNavigationControllerTest.self)
     ]
     
     
@@ -73,6 +74,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(LottieTestViewController(), animated: true)
         case 7:
             self.navigationController?.pushViewController(TableViewController(), animated: true)
+        case 8:
+//            self.navigationController?.pushViewController(UiNavigationControllerTest(), animated: true)
+            //uinavigation controller 는 푸시 불가능 prsent 로 해야함...
+//            self.present(UiNavigationControllerTest(), animated: true) {
+//                print("navigation controller present complete")
+//            }
+        
+            let testNavi = UINavigationController(rootViewController: TestNaviRootViewController())
+            self.present(testNavi, animated: true) {
+                print("navigation controller present complete")
+            }
+            
+//            let testNavi = UINavigationController(rootViewController: TestNaviRootViewController())
+//            testNavi.modalPresentationStyle = .fullScreen
+//            self.present(testNavi, animated: true) {
+//                print("navigation controller present complete")
+//            }
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)
