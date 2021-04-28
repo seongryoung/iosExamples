@@ -96,7 +96,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             
             //해결..
             let storyboard:UIStoryboard = UIStoryboard(name: "UiNavigationControllerTest", bundle: nil)
-            let naviRootVC = storyboard.instantiateViewController(withIdentifier: "testNaviRootVc")
+            let naviRootVC = storyboard.instantiateViewController(withIdentifier: "testNaviRootVC")
             self.navigationController?.pushViewController(naviRootVC, animated: true)
         default:
             let redVc = ScrollViewController()
