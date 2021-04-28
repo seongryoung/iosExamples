@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                           String(describing: UserNotificationViewController.self),
                           String(describing: LottieTestViewController.self),
                           String(describing: TableViewController.self),
-                          String(describing: UiNavigationControllerTest.self)
+                          "uinavigationCotroller"
     ]
     
     
@@ -75,22 +75,29 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case 7:
             self.navigationController?.pushViewController(TableViewController(), animated: true)
         case 8:
+            //삽질1
 //            self.navigationController?.pushViewController(UiNavigationControllerTest(), animated: true)
             //uinavigation controller 는 푸시 불가능 prsent 로 해야함...
+            //노노 push 도 가능 네비게이션 루트 뷰로 푸시 하면 가능함.
+            
+            //삽질2 스토리보드 제대로 연결이 안됨.
 //            self.present(UiNavigationControllerTest(), animated: true) {
 //                print("navigation controller present complete")
 //            }
-        
-            let testNavi = UINavigationController(rootViewController: TestNaviRootViewController())
-            self.present(testNavi, animated: true) {
-                print("navigation controller present complete")
-            }
             
+            //삽질3 하늘이가 알려준대로 해봣지만 역시 안됨... ㅡㅡ
 //            let testNavi = UINavigationController(rootViewController: TestNaviRootViewController())
-//            testNavi.modalPresentationStyle = .fullScreen
+//            let testNaviRootVC = testNavi.viewControllers.first
+//            testNaviRootVC?.view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+//            self.view.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
 //            self.present(testNavi, animated: true) {
 //                print("navigation controller present complete")
 //            }
+            
+            //해결..
+            let storyboard:UIStoryboard = UIStoryboard(name: "UiNavigationControllerTest", bundle: nil)
+            let naviRootVC = storyboard.instantiateViewController(withIdentifier: "testNaviRootVc")
+            self.navigationController?.pushViewController(naviRootVC, animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)

@@ -29,11 +29,10 @@
 		649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */; };
 		649BAC8D262F3A53009C7428 /* LottieTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */; };
 		649BAC94262F3B49009C7428 /* goTrashCan.json in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC91262F3B49009C7428 /* goTrashCan.json */; };
-		64A214F426384DB3002E5CAC /* UiNavigationControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A214F326384DB3002E5CAC /* UiNavigationControllerTest.swift */; };
-		64A214F826384DD4002E5CAC /* UiNavigationControllerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A214F726384DD4002E5CAC /* UiNavigationControllerTest.storyboard */; };
 		64A214FB2638519C002E5CAC /* TestNaviRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A214FA2638519C002E5CAC /* TestNaviRootViewController.swift */; };
 		64BD1095262FCEC90013DA84 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD1093262FCEC90013DA84 /* TableViewController.swift */; };
 		64BD1096262FCEC90013DA84 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64BD1094262FCEC90013DA84 /* TableViewController.xib */; };
+		64CC49D92639A6C900ACF84B /* UiNavigationControllerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CC49D82639A6C900ACF84B /* UiNavigationControllerTest.storyboard */; };
 		64D0CC67262FD8E100F8B995 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */; };
 		64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */; };
 		F97BC3C314AB30BF85B852F1 /* Pods_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */; };
@@ -66,11 +65,10 @@
 		649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTestViewController.swift; sourceTree = "<group>"; };
 		649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTestViewController.xib; sourceTree = "<group>"; };
 		649BAC91262F3B49009C7428 /* goTrashCan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goTrashCan.json; sourceTree = "<group>"; };
-		64A214F326384DB3002E5CAC /* UiNavigationControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiNavigationControllerTest.swift; sourceTree = "<group>"; };
-		64A214F726384DD4002E5CAC /* UiNavigationControllerTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UiNavigationControllerTest.storyboard; sourceTree = "<group>"; };
 		64A214FA2638519C002E5CAC /* TestNaviRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNaviRootViewController.swift; sourceTree = "<group>"; };
 		64BD1093262FCEC90013DA84 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		64BD1094262FCEC90013DA84 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		64CC49D82639A6C900ACF84B /* UiNavigationControllerTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UiNavigationControllerTest.storyboard; sourceTree = "<group>"; };
 		64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,9 +244,8 @@
 		64A214F226384D6A002E5CAC /* navigationController */ = {
 			isa = PBXGroup;
 			children = (
-				64A214F326384DB3002E5CAC /* UiNavigationControllerTest.swift */,
-				64A214F726384DD4002E5CAC /* UiNavigationControllerTest.storyboard */,
 				64A214FA2638519C002E5CAC /* TestNaviRootViewController.swift */,
+				64CC49D82639A6C900ACF84B /* UiNavigationControllerTest.storyboard */,
 			);
 			path = navigationController;
 			sourceTree = "<group>";
@@ -341,7 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A214F826384DD4002E5CAC /* UiNavigationControllerTest.storyboard in Resources */,
+				64CC49D92639A6C900ACF84B /* UiNavigationControllerTest.storyboard in Resources */,
 				1632870725D0D95600E3AC70 /* StackViewController.xib in Resources */,
 				16A56DE7261EC65C001CCBC2 /* UserNotificationViewController.xib in Resources */,
 				1637EBAC25B00B5A001544F9 /* LaunchScreen.storyboard in Resources */,
@@ -420,7 +417,6 @@
 				649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */,
 				16A56DE6261EC65C001CCBC2 /* UserNotificationViewController.swift in Sources */,
 				16D39CAE25B5635100D8C6F0 /* TitleWithImageCell.swift in Sources */,
-				64A214F426384DB3002E5CAC /* UiNavigationControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
