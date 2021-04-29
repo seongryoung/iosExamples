@@ -27,7 +27,8 @@ class ViewController: UIViewController {
                           String(describing: UserNotificationViewController.self),
                           String(describing: LottieTestViewController.self),
                           String(describing: TableViewController.self),
-                          "uinavigationCotroller"
+                          String(describing: UINavigationController.self),
+                          String(describing: QRreaderViewController.self)
     ]
     
     
@@ -98,6 +99,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let storyboard:UIStoryboard = UIStoryboard(name: "UiNavigationControllerTest", bundle: nil)
             let naviRootVC = storyboard.instantiateViewController(withIdentifier: "testNaviRootVC")
             self.navigationController?.pushViewController(naviRootVC, animated: true)
+        case 9:
+//            self.present(QRreaderViewController(), animated: true) {
+//                set completion handler
+//            }
+            
+            self.navigationController?.pushViewController(QRreaderViewController(), animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)

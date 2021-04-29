@@ -26,6 +26,8 @@
 		16A56DE6261EC65C001CCBC2 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A56DE4261EC65C001CCBC2 /* UserNotificationViewController.swift */; };
 		16A56DE7261EC65C001CCBC2 /* UserNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A56DE5261EC65C001CCBC2 /* UserNotificationViewController.xib */; };
 		16D39CAE25B5635100D8C6F0 /* TitleWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */; };
+		64536CD1263AE840000A155E /* QRreaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64536CCF263AE840000A155E /* QRreaderViewController.swift */; };
+		64536CD2263AE840000A155E /* QRreaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64536CD0263AE840000A155E /* QRreaderViewController.xib */; };
 		649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */; };
 		649BAC8D262F3A53009C7428 /* LottieTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */; };
 		649BAC94262F3B49009C7428 /* goTrashCan.json in Resources */ = {isa = PBXBuildFile; fileRef = 649BAC91262F3B49009C7428 /* goTrashCan.json */; };
@@ -62,6 +64,8 @@
 		16D39CAD25B5635100D8C6F0 /* TitleWithImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithImageCell.swift; sourceTree = "<group>"; };
 		2496897ABA7EC0517C6A788B /* Pods-Examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.release.xcconfig"; path = "Target Support Files/Pods-Examples/Pods-Examples.release.xcconfig"; sourceTree = "<group>"; };
 		4A17B6B36955AFD7AD2DB8EE /* Pods-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examples.debug.xcconfig"; path = "Target Support Files/Pods-Examples/Pods-Examples.debug.xcconfig"; sourceTree = "<group>"; };
+		64536CCF263AE840000A155E /* QRreaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRreaderViewController.swift; sourceTree = "<group>"; };
+		64536CD0263AE840000A155E /* QRreaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRreaderViewController.xib; sourceTree = "<group>"; };
 		649BAC8A262F3A53009C7428 /* LottieTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTestViewController.swift; sourceTree = "<group>"; };
 		649BAC8B262F3A53009C7428 /* LottieTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieTestViewController.xib; sourceTree = "<group>"; };
 		649BAC91262F3B49009C7428 /* goTrashCan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goTrashCan.json; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		16080BC425B9419100326818 /* subject */ = {
 			isa = PBXGroup;
 			children = (
+				64536CCE263AE825000A155E /* QRreader */,
 				64A214F226384D6A002E5CAC /* navigationController */,
 				64BD1092262FCEA10013DA84 /* tableView */,
 				649BAC89262F3A1A009C7428 /* lottie */,
@@ -213,6 +218,15 @@
 				16A56DE5261EC65C001CCBC2 /* UserNotificationViewController.xib */,
 			);
 			path = UserNotification;
+			sourceTree = "<group>";
+		};
+		64536CCE263AE825000A155E /* QRreader */ = {
+			isa = PBXGroup;
+			children = (
+				64536CCF263AE840000A155E /* QRreaderViewController.swift */,
+				64536CD0263AE840000A155E /* QRreaderViewController.xib */,
+			);
+			path = QRreader;
 			sourceTree = "<group>";
 		};
 		649BAC89262F3A1A009C7428 /* lottie */ = {
@@ -347,6 +361,7 @@
 				649BAC94262F3B49009C7428 /* goTrashCan.json in Resources */,
 				16080BC925B941E600326818 /* RedViewController.xib in Resources */,
 				1637EBA925B00B5A001544F9 /* Assets.xcassets in Resources */,
+				64536CD2263AE840000A155E /* QRreaderViewController.xib in Resources */,
 				16682289261BEA33000B70E9 /* CllocationViewController.xib in Resources */,
 				64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */,
 				169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */,
@@ -412,6 +427,7 @@
 				1637EBA025B00B57001544F9 /* AppDelegate.swift in Sources */,
 				64A214FB2638519C002E5CAC /* TestNaviRootViewController.swift in Sources */,
 				1632870625D0D95600E3AC70 /* StackViewController.swift in Sources */,
+				64536CD1263AE840000A155E /* QRreaderViewController.swift in Sources */,
 				64BD1095262FCEC90013DA84 /* TableViewController.swift in Sources */,
 				16080BC825B941E600326818 /* RedViewController.swift in Sources */,
 				649BAC8C262F3A53009C7428 /* LottieTestViewController.swift in Sources */,
