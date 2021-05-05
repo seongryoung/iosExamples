@@ -37,6 +37,9 @@
 		64CC49D92639A6C900ACF84B /* UiNavigationControllerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CC49D82639A6C900ACF84B /* UiNavigationControllerTest.storyboard */; };
 		64D0CC67262FD8E100F8B995 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */; };
 		64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */; };
+		64DB93902642E0CA004AB278 /* MatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB938F2642E0CA004AB278 /* MatherViewController.swift */; };
+		64DB93932642E118004AB278 /* ChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB93912642E118004AB278 /* ChildController.swift */; };
+		64DB93942642E118004AB278 /* ChildController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64DB93922642E118004AB278 /* ChildController.xib */; };
 		F97BC3C314AB30BF85B852F1 /* Pods_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		64CC49D82639A6C900ACF84B /* UiNavigationControllerTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UiNavigationControllerTest.storyboard; sourceTree = "<group>"; };
 		64D0CC65262FD8E100F8B995 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		64D0CC66262FD8E100F8B995 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		64DB938F2642E0CA004AB278 /* MatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatherViewController.swift; sourceTree = "<group>"; };
+		64DB93912642E118004AB278 /* ChildController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildController.swift; sourceTree = "<group>"; };
+		64DB93922642E118004AB278 /* ChildController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildController.xib; sourceTree = "<group>"; };
 		F8B5C92F626448DC4E4E1740 /* Pods_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 		16080BC425B9419100326818 /* subject */ = {
 			isa = PBXGroup;
 			children = (
+				64DB938A2642E048004AB278 /* Inheritance */,
 				64536CCE263AE825000A155E /* QRreader */,
 				64A214F226384D6A002E5CAC /* navigationController */,
 				64BD1092262FCEA10013DA84 /* tableView */,
@@ -283,6 +290,16 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		64DB938A2642E048004AB278 /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				64DB938F2642E0CA004AB278 /* MatherViewController.swift */,
+				64DB93912642E118004AB278 /* ChildController.swift */,
+				64DB93922642E118004AB278 /* ChildController.xib */,
+			);
+			path = Inheritance;
+			sourceTree = "<group>";
+		};
 		E5BB3E4309F7A4EC99C127AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +381,7 @@
 				64536CD2263AE840000A155E /* QRreaderViewController.xib in Resources */,
 				16682289261BEA33000B70E9 /* CllocationViewController.xib in Resources */,
 				64D0CC68262FD8E100F8B995 /* TitleTableViewCell.xib in Resources */,
+				64DB93942642E118004AB278 /* ChildController.xib in Resources */,
 				169D227C25FEE20D00367F3C /* LikeStackViewController.xib in Resources */,
 				1637EBA725B00B57001544F9 /* Main.storyboard in Resources */,
 				16649D2325DA32F800929890 /* ScrollViewController.xib in Resources */,
@@ -423,9 +441,11 @@
 				169D227B25FEE20D00367F3C /* LikeStackViewController.swift in Sources */,
 				1637EBA425B00B57001544F9 /* ViewController.swift in Sources */,
 				16649D2225DA32F800929890 /* ScrollViewController.swift in Sources */,
+				64DB93902642E0CA004AB278 /* MatherViewController.swift in Sources */,
 				64D0CC67262FD8E100F8B995 /* TitleTableViewCell.swift in Sources */,
 				1637EBA025B00B57001544F9 /* AppDelegate.swift in Sources */,
 				64A214FB2638519C002E5CAC /* TestNaviRootViewController.swift in Sources */,
+				64DB93932642E118004AB278 /* ChildController.swift in Sources */,
 				1632870625D0D95600E3AC70 /* StackViewController.swift in Sources */,
 				64536CD1263AE840000A155E /* QRreaderViewController.swift in Sources */,
 				64BD1095262FCEC90013DA84 /* TableViewController.swift in Sources */,

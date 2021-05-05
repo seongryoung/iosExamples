@@ -28,7 +28,8 @@ class ViewController: UIViewController {
                           String(describing: LottieTestViewController.self),
                           String(describing: TableViewController.self),
                           String(describing: UINavigationController.self),
-                          String(describing: QRreaderViewController.self)
+                          String(describing: QRreaderViewController.self),
+                          String(describing: ChildController.self)
     ]
     
     
@@ -105,6 +106,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //            }
             
             self.navigationController?.pushViewController(QRreaderViewController(), animated: true)
+        case 10:
+            self.navigationController?.pushViewController(ChildController(), animated: true)
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)
