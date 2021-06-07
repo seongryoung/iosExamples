@@ -29,7 +29,8 @@ class ViewController: UIViewController {
                           String(describing: TableViewController.self),
                           String(describing: UINavigationController.self),
                           String(describing: QRreaderViewController.self),
-                          String(describing: ChildController.self)
+                          String(describing: ChildController.self),
+                          String(describing: TableViewViewController.self)
     ]
     
     
@@ -108,6 +109,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(QRreaderViewController(), animated: true)
         case 10:
             self.navigationController?.pushViewController(ChildController(), animated: true)
+        case 11:
+//            let storyboard:UIStoryboard = UIStoryboard(name: "TableViewViewController", bundle: nil)
+//            self.navigationController?.pushViewController(TableViewViewController(), animated: true)
+            let sb = UIStoryboard(name: "TableViewViewController", bundle: nil)
+            if #available(iOS 13.0, *) {
+                guard let vc = sb.instantiateViewController(identifier: "TableViewViewController") as? TableViewViewController else { fatalError() }
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                // Fallback on earlier versions
+                guard let vc = storyboard?.instantiateViewController(withIdentifier: "TableViewViewController") as? TableViewViewController else { fatalError() }
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         default:
             let redVc = ScrollViewController()
             self.navigationController?.pushViewController(redVc, animated: true)

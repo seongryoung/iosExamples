@@ -8,4 +8,6 @@ target 'Examples' do
   # Pods for Examples
 pod 'lottie-ios'
 
+pod 'Alamofire', '~> 5.4.3'
+
 end
